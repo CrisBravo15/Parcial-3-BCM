@@ -5,7 +5,7 @@ Script para automatización de formularios con pyautogui
 Ejecuta el exam_runner.exe y no hagas clic ni presiones ninguna entrada en el teclado para no alterar el proceso de rellenado del formulario
 
 # Explicación de solución
-Decidimos que los datos ingresados ya estuvieran dentro del archivo, y que se abriera google chrome mediante la búsqueda de windows porque era más sencillo que usar la propiedad de pyautogui LocateOnScreen, mediante tabs nos fuimos desplazando por todo el formulario y en la parte final de los radiobuttons para no utilizar un click o un enter decidimos utilizar la tecla down que al bajar en las opciones seleccionaría siempre la opción del medio
+Primero encontramos la imagen usando la libreria **pyautogui** y su función *locateOnScreen* y le damos una imagen de cómo se ve el input inicial y ahi seguimos introduciendo los datos mediante la data que está declarada en el archivo runner y nos fuimos desplazando a traves del 'tab' hasta llegar a la parte de los RadioButtons donde volvimos a utilizar lo mismo que al principio y si la data decía que equipo era ninguno buscaba la imagen y le daba clic sobre la opción
 
 # Plataforma probada
 Prueba ejecutada con Windows 10
@@ -17,7 +17,7 @@ Resolución de pantalla usada: 1920 x 1080
 No se trabajó con coordenadas
 
 # Equipo y Contribuciones
-- Cristian Adan Bravo Guerra: Creación del repositorio junto con el README.md y la investigación de desplazamiento en el formulario
+- Cristian Adan Bravo Guerra: Creación del repositorio junto con el README.md, la investigación de desplazamiento en el formulario, creación de nuevas funciones para saber en qué área introducir datos
 - Bruno Alberto Gonzalez Cuellar: Ayuda a estructurar el código y a organizar las carpetas para el repositorio
 - Mikel Eduardo Jonguitud Hernandez: Ayuda a estructurar el código y encargado de escoger los comandos de PowerShell a ejecutar
 
